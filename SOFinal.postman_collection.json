@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "ca8b99b4-3282-466d-a906-c0f1d38fcf4a",
+		"name": "SOFinal",
+		"description": "Aqui se van a probar las rutas del proyecto final. ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Modificar estudiante",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Eduardo\",\r\n    \"apellidos\": \"Torres\",\r\n    \"edad\": \"21\",\r\n    \"sexo\": \"hombre\",\r\n    \"direccion\": \"Mikza está chida\",\r\n    \"carrera\": \"IDS\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/estudiantes/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"estudiantes",
+						"1",
+						""
+					]
+				},
+				"description": "Aqui se van a mostrar todos los estudiantes. "
+			},
+			"response": []
+		},
+		{
+			"name": "Estudiante por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/estudiantes/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"estudiantes",
+						"1"
+					]
+				},
+				"description": "Aqui se ven todos los estudiantes por ID"
+			},
+			"response": []
+		},
+		{
+			"name": "Nuevo estudiante",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Eduardo2\",\r\n    \"apellidos\": \"Torres2\",\r\n    \"edad\": \"12\",\r\n    \"sexo\": \"hombre\",\r\n    \"direccion\": \"YUJU\",\r\n    \"carrera\": \"IDS\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/estudiantes/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"estudiantes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Todos los estudiantes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/estudiantes",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"estudiantes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar estudiante",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/estudiantes/6/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"estudiantes",
+						"6",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
